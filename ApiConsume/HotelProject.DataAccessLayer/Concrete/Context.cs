@@ -1,5 +1,6 @@
 ﻿
 using HotelProject.EntityLayer.Concrate;
+using HotelProject.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 

@@ -1,12 +1,12 @@
 
 using HotelProject.Business.Abstract;
 using HotelProject.Business.Concrete;
+using HotelProject.BusinessLayer.Concrete;
 using HotelProject.DataAccessLayer.Abstract;
 using HotelProject.DataAccessLayer.Concrete;
 using HotelProject.DataAccessLayer.EntityFramework;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -63,8 +63,8 @@ namespace HotelProject.WebApi
             //services.AddScoped<IWorkLocationDal, EfWorkLocationDal>();
             //services.AddScoped<IWorkLocationService, WorkLocationManager>();
 
-            //services.AddScoped<IAppUserDal, EfAppUserDal>();
-            //services.AddScoped<IAppUserService, AppUserManager>();
+            services.AddScoped<IAppUserDal, EfAppUserDal>();
+            services.AddScoped<IAppUserService, AppUserManager>();
 
             services.AddAutoMapper(typeof(Startup));
 

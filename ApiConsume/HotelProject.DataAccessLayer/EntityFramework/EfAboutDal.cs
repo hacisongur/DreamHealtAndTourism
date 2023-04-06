@@ -2,12 +2,6 @@
 using HotelProject.DataAccessLayer.Concrete;
 using HotelProject.DataAccessLayer.Repositories;
 using HotelProject.EntityLayer.Concrate;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace HotelProject.DataAccessLayer.EntityFramework
 {
     public class EfAboutDal : GenericRepository<About>, IAboutDal

@@ -1,6 +1,7 @@
 
 using HotelProject.DataAccessLayer.Concrete;
 using HotelProject.EntityLayer.Concrate;
+using HotelProject.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
